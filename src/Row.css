@@ -1,0 +1,35 @@
+.row{
+    margin-left: 20px;
+    color: white;
+}
+
+.row__posters{
+    display:flex;
+    overflow-y: hidden;  /* y축 스크롤 제거 */
+    overflow-x: scroll;
+    padding: 20px;
+}
+
+.row__posters::-webkit-scrollbar {
+    display: none;      /* 스크롤바 안보이게 기능은 유지 */
+}
+
+.row__poster{
+    object-fit: contain;
+    width: 100%;
+    max-height: 100px;
+    margin-right: 10px;
+    transition: transform 450ms;
+}
+
+.row__poster:hover{
+    transform: scale(1.08);
+}
+
+.row__posterLarge{
+    max-height: 250px;
+}
+
+.row__posterLarge:hover{
+    transform: scale(1.09);
+}
